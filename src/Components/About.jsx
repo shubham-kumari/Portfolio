@@ -34,12 +34,12 @@ const data = [
 const About = () => {
     return (
         <>
-            <div className='text-900 font-mon font-medium text-base px-24 flex gap-12 items-center justify-center'>
-                <div className='flex-1'>
-                    <h1 className='font-dm text-8xl'>About</h1>
-                    <div className='flex flex-col py-8 items-start gap-8'>
+            <div className='lg:px-24 px-5 py-8  text-900 font-mon font-medium sm:text-base text-sm flex lg:flex-row flex-col items-center justify-center sm:gap-16 gap-2 lg:h-screen h-auto'>
+                <div className='flex-1 flex-col sm:gap-0 gap-2'>
+                    <h1 className='font-dm sm:text-8xl text-6xl'>About</h1>
+                    <div className='flex flex-col sm:py-8 py-4 items-start sm:gap-8 gap-5 self-stretch'>
                         <p>Hello! My name is Shubham Kumari, a UI/UX designer and frontend web developer who’s passionate about turning ideas into beautiful and functional digital experiences. During my time as a UI/UX intern at Pixel Bharat, I’ve worked on transforming creative ideas into designs that are both engaging and user-friendly. In my work, I utilize programs such as:</p>
-                        <div className='flex flex-wrap gap-8'>
+                        <div className='flex flex-wrap items-center self-stretch sm:gap-8 gap-4'>
                             {data.map((e, index) => (
                                 <div key={index} className='flex items-center gap-2'>
                                     <img src={e.image} alt={e.text} />
@@ -50,11 +50,13 @@ const About = () => {
                         <p>At the Department of Holistic Education, I focused on blending design with functionality using ReactJS and Tailwind CSS, working on projects like Car Information Portal, VB-ITR Website, Skillzyy, and Bookster.</p>
                     </div>
                 </div>
-                <div className='flex flex-col items-start justify-center gap-2 w-96'>
-                    <img src={star1} alt="Star 1" className='w-16 h-auto' />
-                    <div className='flex flex-col items-end justify-end gap-2 self-stretch'>
-                        <img className='h-96 w-auto rounded-2xl border-[12px] border-900' src={profile} alt="Profile" />
-                        <img src={star2} alt="Star 2" className='w-16 h-auto' />
+                <div className='flex flex-col items-start justify-center sm:gap-2 gap-0 sm:w-[450px] w-80 sm:px-0 px-3'>
+                    <img src={star1} alt="Star 1" className='sm:w-16 h-auto w-8' />
+                    <div className='flex flex-col items-end justify-end sm:gap-2 gap-0 self-stretch sm:px-0 px-0'>
+                        <div className='flex flex-col justify-center items-center gap-12 self-stretch'>
+                            <img className='w-auto sm:h-[500px] h-80 rounded-2xl border-[12px] border-900' src={profile} alt="Profile" />
+                        </div>
+                        <img src={star2} alt="Star 2" className='sm:w-16 w-8 h-auto flex justify-end items-end' />
                     </div>
                 </div>
             </div>

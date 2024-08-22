@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <>
     <div className='h-screen border-b border-99'>
-      <div className='px-24 py-8 flex justify-between items-center text-900 border-b border-99'>
-        <h1 className='font-dm text-3xl '>Shubham Kumari</h1>
-        <div className='font-mon flex gap-8 text-base font-medium items-center'>
+      <div className='lg:px-24 px-5 lg:py-8 py-5 flex justify-between items-center text-900 border-b border-99'>
+        <h1 className='font-dm sm:text-3xl text-lg '>Shubham Kumari</h1>
+        <div className='font-mon hidden lg:flex gap-8 text-base font-medium items-center'>
           <a className='px-4 py-2 border-b border-transparent hover:text-secondary hover:border-secondary' href="">Home</a>
           <a className='px-4 py-2 border-b border-transparent hover:text-secondary hover:border-secondary' href="">Resume</a>
           <a className='px-4 py-2 border-b border-transparent hover:text-secondary hover:border-secondary' href="">Get In Touch</a>
