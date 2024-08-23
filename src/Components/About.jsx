@@ -34,9 +34,9 @@ const data = [
 const About = () => {
     return (
         <>
-            <div className='lg:px-24 px-5 py-8  text-900 font-mon font-medium sm:text-base text-sm flex lg:flex-row flex-col items-center justify-center sm:gap-16 gap-2 lg:h-screen h-auto  border-b border-99'>
-                <div className='flex-1 flex-col sm:gap-0 gap-2'>
-                    <h1 className='font-dm sm:text-8xl text-6xl'>About</h1>
+            <div className='lg:px-24 px-5 py-16  text-900 font-mon font-medium sm:text-base text-sm flex lg:flex-row flex-col items-center justify-center sm:gap-16 gap-2 lg:h-screen h-auto  border-b border-99'>
+                <div className='flex flex-1 flex-col sm:gap-0 gap-2  '>
+                    <h1 className='font-dm sm:text-8xl text-5xl'>About</h1>
                     <div className='flex flex-col sm:py-8 py-4 items-start sm:gap-8 gap-5 self-stretch'>
                         <p>Hello! My name is Shubham Kumari, a UI/UX designer and frontend web developer who’s passionate about turning ideas into beautiful and functional digital experiences. During my time as a UI/UX intern at Pixel Bharat, I’ve worked on transforming creative ideas into designs that are both engaging and user-friendly. In my work, I utilize programs such as:</p>
                         <div className='flex flex-wrap items-center self-stretch sm:gap-8 gap-4'>
@@ -45,7 +45,7 @@ const About = () => {
                                     <img src={e.image} alt={e.text} />
                                     <p>{e.text}</p>
                                 </div>
-                            ))}
+                            ))}                 
                         </div>
                         <p>At the Department of Holistic Education, I focused on blending design with functionality using ReactJS and Tailwind CSS, working on projects like Car Information Portal, VB-ITR Website, Skillzyy, and Bookster.</p>
                     </div>

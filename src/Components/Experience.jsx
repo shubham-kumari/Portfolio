@@ -37,22 +37,22 @@ const data = [
 const Experience = () => {
     return (
         <>
-            <div className='relative flex flex-col justify-center items-start lg:px-24 px-5 lg:py-8 py-5 font-mon font-medium text-base h-screen text-900 border-b border-99'>
-                <div className='relative flex items-center'>
+            <div className='relative flex flex-col justify-center items-start lg:px-24 px-5 py-16 font-mon font-medium sm:text-base text-sm sm:h-screen text-900 border-b border-99 gap-2'>
+                <div className=' flex items-center'>
                     <img 
-                        className='absolute h-14 top-0  transform -translate-x-1/2 z-0' 
+                        className='absolute sm:h-14 h-8 top-16 left-1  z-0' 
                         src={circle} 
                         alt="Circle" 
                     />
-                    <h1 className='font-dm sm:text-8xl text-6xl relative z-10'>My Experience</h1>
+                    <h1 className='font-dm sm:text-8xl text-5xl relative z-10'>My Experience:</h1>
                 </div>
 
-                <div className='flex py-8 items-start content-start gap-y-4 self-stretch flex-wrap' >
+                <div className='flex sm:py-8 py-5 items-start content-start gap-y-4 self-stretch flex-wrap' >
                     {data.map((e, index) => {
                         return (
-                            <div key={index} className='flex min-w-[640px] items-center gap-2 flex-1'>
-                                <img className='' src={e.icon} alt={index} />
-                                <p>{e.text}</p>
+                            <div key={index} className='flex sm:min-w-[640px] min-w-[300px] items-start gap-2 flex-1'>
+                                <img className='sm:w-6  w-4 ' src={e.icon} alt={index} />
+                                <p >{e.text}</p>
                             </div>
                         )
                     })}

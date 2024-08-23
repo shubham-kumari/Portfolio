@@ -6,7 +6,7 @@ import circle from '../assets/images/Ellipse 2.svg'
 const Header = () => {
   return (
     <>
-    <div className=' text-900 font-mon font-medium sm:text-base text-xs flex flex-col items-center justify-center self-stretch h-screen '>
+    <div className=' text-900 font-mon font-medium sm:text-base text-xs flex flex-col items-center justify-center self-stretch h-screen'>
         <div className='flex justify-center items-end gap-2 '>
             <div className='flex pt-1 items-start sm:gap-3 gap-2 self-stretch'>
                 <img className='sm:h-auto h-5' src={star1} alt="Star" />
