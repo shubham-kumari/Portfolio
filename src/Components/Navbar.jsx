@@ -18,7 +18,7 @@ const menu = [
   },
   {
     menuName: 'About',
-    path: '/about'
+    path: '/#about'
   },
   {
     menuName: 'Get In Touch',

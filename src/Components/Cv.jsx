@@ -7,7 +7,18 @@ import github from '../assets/images/Github.svg'
 import linkedin from '../assets/images/Vector.svg'
 import line2 from '../assets/images/Line 1.svg'
 
+const PDF_FILE_URL = 'http://localhost:3000/SHUBHAM RESUME.pdf'
+
 const Cv = () => {
+    const downloadFile = (url) =>{
+        const fileName = url.split('/').pop();
+        const aTag = document.createElement('a');
+        aTag.href= url;
+        aTag.setAttribute('download',fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    }
     return (
         <>
             <div className='flex flex-col items-start justify-center lg:px-24 px-5 py-16 sm:h-screen text-900 font-mon font-medium sm:text-base text-sm border-b border-99'>
@@ -138,7 +149,7 @@ const Cv = () => {
                     </div>
                 </div>
                 <div className='flex items-center justify-center w-full '>
-                    <button className='px-8 py-4 bg-900 text-primary rounded-full'>Download Resume</button>
+                    <button onClick={() => {downloadFile(PDF_FILE_URL)}} className='px-8 py-4 bg-900 text-primary rounded-full'>Download Resume</button>
                 </div>
             </div>
         </>
