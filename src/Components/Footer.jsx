@@ -5,7 +5,7 @@ import linkedin from '../assets/images/Vector (1).svg'
 const Footer = () => {
   return (
     <>
-      <div className='flex flex-col lg:px-24 px-5 py-8 justify-center items-start gap-4 self-stretch bg-900 font-mon font-medium text-primary text-base'>
+      <div className='flex sm:flex-row flex-col lg:px-24 px-5 py-8 justify-between items-start gap-4 self-stretch bg-900 font-mon font-medium text-primary text-base'>
         <p>kumarishubham273@gmail.com</p>
         <div className='flex gap-4 items-center'>
           <img src={github} alt="GitHub" />

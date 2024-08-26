@@ -37,10 +37,10 @@ const data = [
 const Experience = () => {
     return (
         <>
-            <div className='relative flex flex-col justify-center items-start lg:px-24 px-5 py-16 font-mon font-medium sm:text-base text-sm sm:h-screen text-900 border-b border-99 gap-2'>
-                <div className=' flex items-center'>
+            <div className='flex flex-col justify-center items-start lg:px-24 px-5 sm:py-32 py-16 font-mon font-medium sm:text-base text-sm  text-900 border-b border-99 gap-2'>
+                <div className='relative  flex items-center'>
                     <img 
-                        className='absolute sm:h-14 h-8 top-16 left-1  z-0' 
+                        className='absolute sm:h-14 h-6 sm:-top-3 -top-0 sm:-left-7  -left-3 z-0' 
                         src={circle} 
                         alt="Circle" 
                     />
