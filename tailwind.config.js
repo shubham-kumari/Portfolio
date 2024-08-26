@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      scrollBehavior: {
+        smooth: 'smooth',
+      },
       fontFamily:{
         dm: ['DM Serif Display', 'serif'],
         mon: ['Montserrat', 'sans-serif']
@@ -22,6 +25,9 @@ module.exports = {
         secondary: '#BB936D' 
       }
     },
+  },
+  variants: {
+    scrollBehavior: ['responsive'],
   },
   plugins: [],
 }

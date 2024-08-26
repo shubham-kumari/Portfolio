@@ -21,14 +21,14 @@ const Cv = () => {
     }
     return (
         <>
-            <div className='flex flex-col items-start justify-center lg:px-24 px-5 py-16 sm:h-screen text-900 font-mon font-medium sm:text-base text-sm border-b border-99'>
+            <div className='flex flex-col items-start justify-center lg:px-24 px-5 sm:pt-8 pt-16 pb-16 sm:h-screen text-900 font-mon font-medium sm:text-base text-sm border-b border-99 gap-2' id='resume'>
                 <div className='flex items-start'>
                     <img className='pt-11 hidden' src={circle} alt="Circle" />
                     <h1 className='flex flex-col items-start justify-center font-dm sm:text-8xl text-6xl sm:h-40 h-20 '>CV</h1>
                     <img className='sm:w-auto w-8' src={star} alt="Star" />
                 </div>
                 <div className='flex flex-col items-start self-stretch'>
-                    <div className='flex sm:flex-row flex-col py-4 items-start sm:gap-8 gap-5 self-stretch'>
+                    <div className='flex sm:flex-row flex-col  items-start sm:gap-8 gap-5 self-stretch'>
                         <div className='flex flex-col items-start sm:gap-2 flex-1'>
                             <p className='font-dm sm:text-5xl text-3xl'>Work Experience</p>
                             <div className='flex py-4 items-center self-stretch'>
