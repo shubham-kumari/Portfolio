@@ -40,7 +40,7 @@ const Cv = () => {
                                 <div className='flex flex-col items-start gap-4 flex-1'>
                                     <div className='flex flex-col items-start self-stretch'>
                                         <p className='font-bold'>UI/UX Designer</p>
-                                        <p className='text-600 sm:text-sm text-xs'>Pixel Bharat | Jan’24 - Apr’24</p>
+                                        <p className='text-600 sm:text-sm text-xs'>Pixel Bharat | July’24 - Sept'24</p>
                                     </div>
                                     <div className='flex flex-col items-start self-stretch'>
                                         <p className='font-bold'>Frontend Developer - Intern</p>
