@@ -7,18 +7,33 @@ import Projects from '../Components/Projects'
 import Cv from '../Components/Cv'
 import Footer from '../Components/Footer'
 import Thank from '../Components/Thank'
+import GoToTop from '../Components/GoToTop'
 
 const Home = () => {
   return (
-    <div className='bg-primary'>
+    <div className='bg-primary snap-y snap-mandatory h-screen overflow-y-scroll'>
+      <section className="snap-start">
         <Navbar />
-        {/* <Header /> */}
+      </section>
+      <section className="snap-start ">
         <About />
+      </section>
+      {/* <Header /> */}
+      <section className="snap-start">
         <Experience />
-        <Projects/>
-        <Cv />
-        <Thank />
-        <Footer/>
+      </section>
+      <section className="snap-start">
+      <Projects />
+      </section>
+      <section className="snap-start">
+      <Cv />
+      </section>
+      <section className="snap-start">
+      <Thank />
+      </section>
+      {/* <GoToTop /> */}
+      <Footer />
+
     </div>
   )
 }
