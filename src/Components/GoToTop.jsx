@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FaArrowUp } from "react-icons/fa";
+
 
 const GoToTop = () => {
 
@@ -26,9 +28,9 @@ const GoToTop = () => {
     return (
         
         <button onClick={() => handleSmoothScroll()}
-            className='fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg'
-        >
-            💛
+            className='fixed bottom-5 right-5 bg-900 p-3 rounded-full shadow-lg'
+        ><FaArrowUp className='text-primary' />
+
         </button>
 
     );
