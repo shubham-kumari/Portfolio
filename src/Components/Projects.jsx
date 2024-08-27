@@ -18,8 +18,8 @@ const data = [
   {
     image: project2,
     smDesc: "Table - Booking / Mobile App",
-    heading: "Kouton",
-    desc: "Kouton simplifies dining out with easy table bookings. Open the app to select your preferred light or dark mode. Browse and filter restaurants to find what you want, then book a table with just a few taps. Receive instant notifications for booking confirmations and updates. Kouton makes dining reservations smooth and convenient.",
+    heading: "Metereos",
+    desc: "Our car leasing website is fully responsive and features an intuitive design for an enhanced user experience. With easy navigation, user-friendly search and filter options, and a streamlined application process, it ensures minimal complexity. Real-time updates and notifications keep users informed, making every interaction smooth, efficient, and visually appealing.",
     ch1: "Creating user flow.",
     ch2: "Identification of user needs.",
     ch3: "Create wireframes for design.",
@@ -62,13 +62,13 @@ const Projects = () => {
               className={`flex flex-col sm:flex-row py-8 items-center gap-16 self-stretch ${isEven ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}>
               <img src={e.image} alt="Project" className=''/>
               <div className='flex  flex-col items-start flex-1'>
-                <div className='flex flex-col items-start self-stretch'>
+                <div className='flex flex-col items-center self-stretch gap-2'>
                   <div className='flex  items-center gap-6  self-stretch'>
                     <div className='flex flex-col items-start flex-1'>
                       <p className='text-600 sm:text-sm text-xs'>{e.smDesc}</p>
                       <p className='font-dm sm:text-5xl text-3xl'>{e.heading}</p>
                     </div>
-                    <p className='text-8xl font-dm text-400'>0{index + 1}</p>
+                    <p className='text-8xl font-dm text-300'>0{index + 1}</p>
                   </div>
                   <p>{e.desc}</p>
                 </div>

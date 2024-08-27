@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='border-b border-99 text-900 font-mon text-base font-medium' id='home'>
+      <div className='border-b border-99 text-900 font-mon text-base font-medium h-screen' id='home'>
         <div className='lg:px-24 px-5 lg:py-8 py-5 flex justify-between items-center border-b border-99'>
           <h1 className='font-dm sm:text-3xl text-lg'>Shubham Kumari</h1>
           <div className='hidden lg:flex gap-8 items-center'>

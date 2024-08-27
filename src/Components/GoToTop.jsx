@@ -28,7 +28,7 @@ const GoToTop = () => {
     return (
         
         <button onClick={() => handleSmoothScroll()}
-            className='fixed bottom-5 right-5 bg-900 p-3 rounded-full shadow-lg'
+            className='fixed bottom-8 right-12 bg-900 p-3 rounded-full shadow-lg animate-bounce'
         ><FaArrowUp className='text-primary' />
 
         </button>

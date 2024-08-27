@@ -10,19 +10,20 @@ import Thank from '../Components/Thank'
 import GoToTop from '../Components/GoToTop'
 
 const Home = () => {
+ 
   return (
     <div className='bg-primary snap-y snap-mandatory h-screen overflow-y-scroll'>
-      <section className="snap-start">
+      <section className="snap-start scroll-smooth h-screen">
         <Navbar />
       </section>
-      <section className="snap-start ">
+      <section className="snap-start scroll-smooth">
         <About />
       </section>
       {/* <Header /> */}
-      <section className="snap-start">
+      <section className="snap-start ">
         <Experience />
       </section>
-      <section className="snap-start">
+      <section className="snap-start ">
       <Projects />
       </section>
       <section className="snap-start">
