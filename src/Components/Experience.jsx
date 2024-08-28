@@ -7,6 +7,11 @@ import painting from '../assets/images/Painting.svg';
 import responsive from '../assets/images/Responsive.svg';
 import stack from '../assets/images/Stack.svg';
 import group from '../assets/images/Group.svg';
+import { FaPaintBrush } from 'react-icons/fa'
+import { RiDashboardLine } from 'react-icons/ri'
+import { RiGroupLine } from 'react-icons/ri'
+import { ImStack } from 'react-icons/im'
+import { BiEdit } from 'react-icons/bi'
 
 const data = [
   { icon: painting, text: 'Designing complex web and mobile interfaces.' },
@@ -26,11 +31,11 @@ const Experience = () => {
       className='flex flex-col justify-center items-start lg:px-24 px-5 sm:py-32 py-16 font-mon font-medium sm:text-base text-sm text-900 border-b border-99 gap-2 h-screen'
     >
       <div className='relative flex items-center'>
-        <img
+        {/* <img
           className='absolute sm:h-14 h-6 sm:-top-3 -top-0 sm:-left-7 -left-3 z-0'
           src={circle}
           alt="Circle"
-        />
+        /> */}
         <h1 className='font-dm sm:text-8xl text-5xl relative z-10'>My Experience:</h1>
       </div>
 
