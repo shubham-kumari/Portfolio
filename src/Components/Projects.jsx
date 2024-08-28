@@ -49,17 +49,17 @@ const data = [
 
 const Projects = () => {
   return (
-    <div className='font-mon font-medium sm:text-base text-sm  text-900 flex lg:px-24 px-5 lg:py-32 py-16  flex-col items-start flex-1  self-stretch  border-b border-99 gap-16' >
+    <div className='font-mon font-medium sm:text-base text-sm  text-900 flex lg:px-24 px-5 lg:py-32 sm:py-16 py-8  flex-col items-start flex-1  self-stretch  border-b border-99 sm:gap-16 gap-8' >
       <div className='flex py-6 justify-center items-center self-stretch font-dm text-primary sm:text-8xl text-5xl text-center rounded-full bg-900'>
         My Projects
       </div>
-      <div>
+      <div className='flex flex-col sm:gap-0 gap-8'>
         {data.map((e, index) => {
           const isEven = index % 2 === 0;
           return (
             <div 
               key={index} 
-              className={`flex flex-col sm:flex-row py-8 items-center gap-16 self-stretch ${isEven ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}>
+              className={`flex flex-col sm:flex-row sm:items-center sm:gap-16 gap-6 self-stretch ${isEven ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}>
               
               {/* Image Container with Overlay and Hover Effect */}
               {e.heading === "Metereos" ? (
@@ -81,11 +81,11 @@ const Projects = () => {
                       <p className='text-600 sm:text-sm text-xs'>{e.smDesc}</p>
                       <p className='font-dm sm:text-5xl text-3xl'>{e.heading}</p>
                     </div>
-                    <p className='text-8xl font-dm text-300'>0{index + 1}</p>
+                    <p className='sm:text-8xl text-6xl font-dm text-300'>0{index + 1}</p>
                   </div>
                   <p>{e.desc}</p>
                 </div>
-                <div className='flex py-8 flex-col items-start gap-4  self-stretch'>
+                <div className='flex sm:py-8 py-6 flex-col items-start gap-4  self-stretch'>
                   <h2 className='font-dm sm:text-3xl text-xl'>Challenges</h2>
                   <div className='flex flex-col items-start gap-2 self-stretch'>
                     <li>{e.ch1}</li>
