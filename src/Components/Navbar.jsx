@@ -7,6 +7,7 @@ import github1 from '../assets/images/Github (2).svg';
 import linkedin1 from '../assets/images/Vector (1).svg';
 import Header from './Header';
 
+
 const menu = [
   {
     menuName: 'Home',
@@ -24,6 +25,10 @@ const menu = [
 ];
 
 const Navbar = () => {
+
+  
+
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -69,8 +74,8 @@ const Navbar = () => {
 
         {isOpen && <div className="fixed inset-0 bg-900 bg-opacity-50 z-50" onClick={toggleNavbar}></div>}
 
-        <div className={`fixed inset-x-0 top-0 z-50 w-full lg:hidden transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-500 ease-in-out`}>
-          <div className='lg:hidden flex flex-col items-center bg-900 text-primary py-5 px-5 gap-2'>
+        <div className={`fixed inset-x-0 top-0 z-50 w-full lg:hidden transform  ${isOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-500 ease-in-out`}>
+          <div className='lg:hidden flex flex-col items-center bg-900 text-primary py-5 px-5 gap-2 rounded-b-xl'>
             {menu.map((e, index) => (
               <a
                 key={index}

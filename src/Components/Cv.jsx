@@ -1,34 +1,42 @@
-import React from 'react'
-import circle from '../assets/images/Ellipse.svg'
-import star from '../assets/images/Group 1.svg'
-import ellipse from '../assets/images/Ellipse 4.svg'
-import line from '../assets/images/Line 1 (1).svg'
-import github from '../assets/images/Github.svg'
-import linkedin from '../assets/images/Vector.svg'
-import line2 from '../assets/images/Line 1.svg'
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import circle from '../assets/images/Ellipse.svg';
+import star from '../assets/images/Group 1.svg';
+import ellipse from '../assets/images/Ellipse 4.svg';
+import line from '../assets/images/Line 1 (1).svg';
+import github from '../assets/images/Github.svg';
+import linkedin from '../assets/images/Vector.svg';
+import line2 from '../assets/images/Line 1.svg';
 
-const PDF_FILE_URL = 'http://localhost:3000/SHUBHAM RESUME.pdf'
+const PDF_FILE_URL = 'http://localhost:3000/SHUBHAM RESUME.pdf';
 
 const Cv = () => {
-    const downloadFile = (url) =>{
+    const { ref: experienceRef, inView: experienceInView } = useInView({ threshold: 0.1, });
+    const { ref: educationRef, inView: educationInView } = useInView({ threshold: 0.1, });
+    const { ref: contactsRef, inView: contactsInView } = useInView({ threshold: 0.1, });
+    const { ref: competencesRef, inView: competencesInView } = useInView({ threshold: 0.1,});
+
+    const downloadFile = (url) => {
         const fileName = url.split('/').pop();
         const aTag = document.createElement('a');
-        aTag.href= url;
-        aTag.setAttribute('download',fileName);
+        aTag.href = url;
+        aTag.setAttribute('download', fileName);
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();
-    }
+    };
+
     return (
         <>
             <div className='flex flex-col items-start justify-center lg:px-24 px-5 sm:pt-8 pt-8 pb-8 sm:h-screen text-900 font-mon font-medium sm:text-base text-sm border-b border-99 gap-2' id='resume'>
                 <div className='flex items-start'>
                     <img className='pt-11 hidden' src={circle} alt="Circle" />
-                    <h1 className='flex flex-col items-start justify-center font-dm sm:text-8xl text-6xl sm:h-40 h-20 '>CV</h1>
+                    <h1 className='flex flex-col items-start justify-center font-dm sm:text-8xl text-6xl sm:h-40 h-20'>CV</h1>
                     <img className='sm:w-auto w-8' src={star} alt="Star" />
                 </div>
+
                 <div className='flex flex-col items-start self-stretch'>
-                    <div className='flex sm:flex-row flex-col  items-start sm:gap-8 gap-5 self-stretch'>
+                    <div ref={experienceRef} className={`flex sm:flex-row flex-col items-start sm:gap-8 gap-5 self-stretch transition-transform duration-1000 ease-in-out ${experienceInView ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                         <div className='flex flex-col items-start sm:gap-2 flex-1'>
                             <p className='font-dm sm:text-5xl text-3xl'>Work Experience</p>
                             <div className='flex py-4 items-center self-stretch'>
@@ -73,7 +81,7 @@ const Cv = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col items-start sm:gap-2 flex-1'>
+                        <div ref={contactsRef} className={`flex flex-col items-start sm:gap-2 flex-1 transition-transform duration-1000 ease-in-out ${contactsInView ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                             <p className='font-dm sm:text-5xl text-3xl'>Contacts</p>
                             <div className='flex py-4 flex-col items-start gap-3'>
                                 <div>
@@ -81,13 +89,14 @@ const Cv = () => {
                                     <p>+91 7482049954</p>
                                 </div>
                                 <div className='flex gap-4 items-center'>
-                                    <img src={github} alt="GitHub" />
-                                    <img src={linkedin} alt="LinkedIn" />
+                                    <a href="https://github.com/shubham-kumari" target='_blank' rel="noopener noreferrer"><img src={github} alt="GitHub" /></a>
+                                    <a href="https://www.linkedin.com/in/shubham-kumari/" target='_blank' rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" /></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='flex py-4 items-start sm:gap-2 flex-col self-stretch'>
+
+                    <div ref={competencesRef} className={`flex py-4 items-start sm:gap-2 flex-col self-stretch transition-transform duration-1000 ease-in-out ${competencesInView ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                         <p className='font-dm sm:text-5xl text-3xl'>Competences</p>
                         <div className='flex sm:flex-row flex-col items-start sm:gap-2 self-stretch'>
                             <div className='flex py-4 items-start flex-1'>
@@ -148,13 +157,13 @@ const Cv = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className='flex items-center justify-center w-full pb-4'>
-                    <button onClick={() => {downloadFile(PDF_FILE_URL)}} className='px-8 py-4 bg-900 text-primary rounded-full'>Download Resume</button>
+                    <button onClick={() => downloadFile(PDF_FILE_URL)} className='px-8 py-4 bg-900 text-primary rounded-full'>Download Resume</button>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Cv
-    
+export default Cv;

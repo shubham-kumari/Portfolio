@@ -3,6 +3,20 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      keyframes: {
+        slideInFromLeft: {
+          '0%': { transform: 'translateX(-50%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInFromRight: {
+          '0%': { transform: 'translateX(50%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        slideInFromLeft: 'slideInFromLeft 1s forwards',
+        slideInFromRight: 'slideInFromRight 1s forwards',
+      },
       scrollBehavior: {
         smooth: 'smooth',
       },
