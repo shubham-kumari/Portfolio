@@ -5,7 +5,7 @@ import star2 from '../assets/images/Star 2.svg'
 const Thank = () => {
   return (
     <>
-      <div className='flex sm:py-44 py-28 justify-center items-center font-dm text-900 self-stretch px-5'>
+      <div className='flex sm:py-44 py-24 justify-center items-center font-dm text-900 self-stretch px-5'>
         <div className='flex  flex-col justify-center items-center sm:w-[830px] w-full'>
           <div className='flex items-end self-stretch'>
             <div className='flex items-start flex-1 self-stretch'>

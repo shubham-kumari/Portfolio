@@ -21,7 +21,7 @@ const Cv = () => {
     }
     return (
         <>
-            <div className='flex flex-col items-start justify-center lg:px-24 px-5 sm:pt-8 pt-16 pb-16 sm:h-screen text-900 font-mon font-medium sm:text-base text-sm border-b border-99 gap-2' id='resume'>
+            <div className='flex flex-col items-start justify-center lg:px-24 px-5 sm:pt-8 pt-8 pb-8 sm:h-screen text-900 font-mon font-medium sm:text-base text-sm border-b border-99 gap-2' id='resume'>
                 <div className='flex items-start'>
                     <img className='pt-11 hidden' src={circle} alt="Circle" />
                     <h1 className='flex flex-col items-start justify-center font-dm sm:text-8xl text-6xl sm:h-40 h-20 '>CV</h1>
@@ -148,7 +148,7 @@ const Cv = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center justify-center w-full '>
+                <div className='flex items-center justify-center w-full pb-4'>
                     <button onClick={() => {downloadFile(PDF_FILE_URL)}} className='px-8 py-4 bg-900 text-primary rounded-full'>Download Resume</button>
                 </div>
             </div>

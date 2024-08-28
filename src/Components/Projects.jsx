@@ -59,7 +59,7 @@ const Projects = () => {
           return (
             <div 
               key={index} 
-              className={`flex flex-col sm:flex-row sm:items-center sm:gap-16 gap-6 self-stretch ${isEven ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}>
+              className={`flex flex-col lg:flex-row sm:items-center sm:gap-16 gap-6 self-stretch ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
               
               {/* Image Container with Overlay and Hover Effect */}
               {e.heading === "Metereos" ? (

@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+/* Media query to hide the button if the content height is less than or equal to the viewport height */
+.go-to-top{
+  display: block;
+}
+@media only screen and (max-height: 100vh) {
+  .go-to-top {
+      display: none;
+  }
+}
+
+
+
 @layer base {
   html {
     scroll-behavior: smooth;
