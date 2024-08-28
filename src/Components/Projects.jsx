@@ -17,7 +17,7 @@ const data = [
   },
   {
     image: project2,
-    smDesc: "Table - Booking / Mobile App",
+    smDesc: "Car -  leasing  / Web App",
     heading: "Metereos",
     desc: "Our car leasing website is fully responsive and features an intuitive design for an enhanced user experience. With easy navigation, user-friendly search and filter options, and a streamlined application process, it ensures minimal complexity. Real-time updates and notifications keep users informed, making every interaction smooth, efficient, and visually appealing.",
     ch1: "Creating user flow.",
@@ -27,8 +27,8 @@ const data = [
   },
   {
     image: project3,
-    smDesc: "Table - Booking / Mobile App",
-    heading: "Kouton",
+    smDesc: "OTT  / Mobile App",
+    heading: "Cinema+",
     desc: "Kouton simplifies dining out with easy table bookings. Open the app to select your preferred light or dark mode. Browse and filter restaurants to find what you want, then book a table with just a few taps. Receive instant notifications for booking confirmations and updates. Kouton makes dining reservations smooth and convenient.",
     ch1: "Creating user flow.",
     ch2: "Identification of user needs.",
@@ -37,8 +37,8 @@ const data = [
   },
   {
     image: project1,
-    smDesc: "Table - Booking / Mobile App",
-    heading: "Kouton",
+    smDesc: "Employee Management  / Web App",
+    heading: "Pixel Bharat",
     desc: "Kouton simplifies dining out with easy table bookings. Open the app to select your preferred light or dark mode. Browse and filter restaurants to find what you want, then book a table with just a few taps. Receive instant notifications for booking confirmations and updates. Kouton makes dining reservations smooth and convenient.",
     ch1: "Creating user flow.",
     ch2: "Identification of user needs.",
@@ -60,7 +60,20 @@ const Projects = () => {
             <div 
               key={index} 
               className={`flex flex-col sm:flex-row py-8 items-center gap-16 self-stretch ${isEven ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}>
-              <img src={e.image} alt="Project" className=''/>
+              
+              {/* Image Container with Overlay and Hover Effect */}
+              {e.heading === "Metereos" ? (
+              <div className="relative group rounded-lg">
+                <img src={e.image} alt="Project" className='rounded-lg'/>
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg">
+                  <a href='https://car-neon-alpha.vercel.app/' className="px-8 py-4 bg-primary text-900  rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Launch
+                  </a>
+                </div>
+              </div>
+              ) : (
+                <img src={e.image} alt="Project" className=''/>
+              )}
               <div className='flex  flex-col items-start flex-1'>
                 <div className='flex flex-col items-center self-stretch gap-2'>
                   <div className='flex  items-center gap-6  self-stretch'>
