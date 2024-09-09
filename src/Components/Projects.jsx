@@ -82,7 +82,7 @@ const Projects = () => {
                     <div className="relative group rounded-lg overflow-hidden">
                       <img src={e.image} alt="Project" className="rounded-lg w-full h-auto" />
                       <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
-                        <a href="https://car-neon-alpha.vercel.app/" className="px-8 py-4 bg-primary text-900 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://car-neon-alpha.vercel.app/" target='_blank' className="px-8 py-4 bg-primary text-900 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           Launch
                         </a>
                       </div>

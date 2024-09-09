@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <>
-            <div className=' text-900 font-mon font-medium sm:text-base text-xs flex flex-col items-center justify-center self-stretch h-full'>
+            <div className=' text-900 font-mon font-medium sm:text-base text-xs flex flex-col items-center justify-center self-stretch w-full h-full'>
                 <div className='flex justify-center items-end gap-2 '>
                     <div className='flex pt-1 items-start sm:gap-3 gap-2 self-stretch'>
                         <img ref={leftRef} className={`sm:h-auto h-5 ${leftInView ? 'animate-slideInFromLeft' : '-translate-x-10 opacity-0'

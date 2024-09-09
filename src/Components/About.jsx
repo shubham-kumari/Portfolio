@@ -50,15 +50,15 @@ const About = () => {
                 ref={leftRef}
                 className={`flex flex-1 flex-col sm:gap-0 gap-2 transition-transform duration-1000 ease-in-out  ${leftInView ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}
             >
-                <h1 className='font-dm sm:text-8xl text-5xl'>About</h1>
+                <h1 className='font-dm sm:text-8xl text-5xl '>Hello!</h1>
                 <div className='flex flex-col sm:py-8 py-4 items-start sm:gap-8 gap-5 self-stretch'>
                     <p>
-                        Hello! My name is Shubham Kumari, a UI/UX designer and frontend web developer who’s passionate about turning ideas into beautiful and functional digital experiences. During my time as a <span className='font-bold'>UI/UX intern at Pixel Bharat</span>, I’ve worked on transforming creative ideas into designs that are both engaging and user-friendly. In my work, I utilize programs such as:
+                         My name is Shubham Kumari, a UI/UX designer and frontend web developer who’s passionate about turning ideas into beautiful and functional digital experiences. During my time as a <span className='font-bold'>UI/UX intern at Pixel Bharat</span>, I’ve worked on transforming creative ideas into designs that are both engaging and user-friendly. In my work, I utilize programs such as:
                     </p>
                     <div className='flex flex-wrap items-center self-stretch sm:gap-8 gap-4'>
                         {data.map((e, index) => (
                             <div key={index} className='flex items-center gap-2'>
-                                <img src={e.image} alt={e.text} />
+                                <img className='fill-secondary' src={e.image} alt={e.text} />
                                 <p>{e.text}</p>
                             </div>
                         ))}
