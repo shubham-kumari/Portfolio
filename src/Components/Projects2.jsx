@@ -20,7 +20,7 @@ const image = [
 
 const Projects2 = () => {
   return (
-    <div className="font-mon font-medium sm:text-base text-sm text-900 lg:px-24 px-5 sm:py-16 flex flex-col gap-16 items-center justify-center">
+    <div className="font-mon font-medium sm:text-base text-sm text-900 lg:px-24 px-5 sm:py-16 py-8 flex flex-col sm:gap-16 gap-8 items-center justify-center">
       <div className="flex py-6 justify-center items-center self-stretch font-dm text-primary sm:text-8xl text-5xl text-center rounded-full bg-900">
         Frontend Projects
       </div>

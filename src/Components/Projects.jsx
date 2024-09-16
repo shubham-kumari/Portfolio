@@ -57,7 +57,7 @@ const Projects = () => {
 
   return (
     <div className='font-mon font-medium sm:text-base text-sm text-900 flex lg:px-24 px-5 lg:py-32 sm:py-16 py-8 flex-col items-start flex-1 self-stretch border-b border-99 sm:gap-16 gap-8'>
-      <div className='flex py-6 justify-center items-center self-stretch font-dm text-primary sm:text-8xl text-5xl text-center rounded-full bg-900'>
+      <div className='flex px-4 py-6 justify-center items-center self-stretch font-dm text-primary sm:text-8xl text-5xl text-center rounded-full bg-900'>
         UI/UX Projects
       </div>
       <div className='flex flex-col sm:gap-16 gap-8'>
