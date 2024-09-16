@@ -6,7 +6,7 @@ import photoshop from '../assets/images/Photoshop.svg';
 import illustrator from '../assets/images/Illustrator.svg';
 import star1 from '../assets/images/Group 1.svg';
 import star2 from '../assets/images/Group 2.svg';
-import profile from '../assets/images/profile.jpg';
+import profile from '../assets/images/profile3.jpg';
 import { useInView } from 'react-intersection-observer';
 
 const data = [
@@ -75,7 +75,7 @@ const About = () => {
                 <img src={star1} alt="Star 1" className='sm:w-16 h-auto w-10 transition-transform duration-1000 ease-in-out transform hover:scale-110' />
                 <div className='flex flex-col items-end justify-end sm:gap-2 gap-0 self-stretch sm:px-0 px-0'>
                     <div className='flex flex-col justify-center items-center gap-12 self-stretch'>
-                        <img className='w-auto sm:h-[500px] h-[340px] rounded-2xl border-[12px] border-900 transition-transform duration-1000 ease-in-out transform hover:scale-105' src={profile} alt="Profile" />
+                        <img className='w-auto sm:w-[380px] sm:h-auto h-[340px] rounded-2xl border-[12px] border-900 transition-transform duration-1000 ease-in-out transform hover:scale-105' src={profile} alt="Profile" />
                     </div>
                     <img src={star2} alt="Star 2" className='sm:w-16 w-10 h-auto transition-transform duration-1000 ease-in-out transform hover:scale-110' />
                 </div>

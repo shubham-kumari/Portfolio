@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
       </Routes>
-      <GoToTop />
+      {/* <GoToTop /> */}
     </BrowserRouter>
   );
 }

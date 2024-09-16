@@ -8,6 +8,7 @@ import Cv from '../Components/Cv'
 import Footer from '../Components/Footer'
 import Thank from '../Components/Thank'
 import GoToTop from '../Components/GoToTop'
+import Projects2 from '../Components/Projects2'
 
 const Home = () => {
  
@@ -21,14 +22,18 @@ const Home = () => {
       </section>
       {/* <Header /> */}
       <section className="snap-start ">
-        <Experience />
-      </section>
-      <section className="snap-start ">
-      <Projects />
+        {/* <Experience /> */}
       </section>
       <section className="snap-start">
       <Cv />
       </section>
+      <section className="snap-start ">
+      <Projects />
+      </section>
+      <section className="snap-start ">
+      <Projects2 />
+      </section>
+      
       <section className="snap-start">
       <Thank />
       </section>
