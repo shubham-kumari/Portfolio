@@ -11,7 +11,7 @@ import GoToTop from '../Components/GoToTop'
 import Projects2 from '../Components/Projects2'
 
 const Home = () => {
- 
+
   return (
     <div className='bg-primary snap-y snap-mandatory h-screen overflow-y-scroll'>
       <section className="snap-start scroll-smooth h-screen">
@@ -20,24 +20,24 @@ const Home = () => {
       <section className="snap-start scroll-smooth">
         <About />
       </section>
-      {/* <Header /> */}
+      
       <section className="snap-start ">
         {/* <Experience /> */}
       </section>
       <section className="snap-start">
-      <Cv />
+        <Cv />
       </section>
       <section className="snap-start ">
-      <Projects />
+        <Projects />
       </section>
       <section className="snap-start ">
-      <Projects2 />
+        <Projects2 />
+      </section>
+
+      <section className="snap-start">
+        <Thank />
       </section>
       
-      <section className="snap-start">
-      <Thank />
-      </section>
-      {/* <GoToTop /> */}
       <Footer />
 
     </div>
