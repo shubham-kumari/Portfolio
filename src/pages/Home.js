@@ -39,7 +39,7 @@ const Home = () => {
       </section>
       
       <Footer />
-
+      <GoToTop />
     </div>
   )
 }
