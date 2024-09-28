@@ -8,7 +8,7 @@ import github from '../assets/images/Github.svg';
 import linkedin from '../assets/images/Vector.svg';
 import line2 from '../assets/images/Line 1.svg';
 
-const PDF_FILE_URL = 'http://localhost:3000/SHUBHAM RESUME.pdf';
+const PDF_FILE_URL = 'https://drive.google.com/file/d/15BeUCXtTzO0Dc5UYLn5k4nR9FOrDK2rU/view?usp=drive_link';
 
 const Cv = () => {
     const { ref: experienceRef, inView: experienceInView } = useInView({ threshold: 0.1, });
@@ -159,7 +159,7 @@ const Cv = () => {
                 </div>
 
                 <div className='flex items-center justify-center w-full pb-4'>
-                    <button onClick={() => downloadFile(PDF_FILE_URL)} className='px-8 py-4 bg-900 text-primary rounded-full'>Download Resume</button>
+                <button target="_blank"  onClick={() => window.open(PDF_FILE_URL, '_blank')}  className='px-8 py-4 bg-900 text-primary rounded-full' >Download Resume</button>
                 </div>
             </div>
         </>
