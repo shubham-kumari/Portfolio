@@ -8,7 +8,7 @@ import github from '../assets/images/Github.svg';
 import linkedin from '../assets/images/Vector.svg';
 import line2 from '../assets/images/Line 1.svg';
 
-const PDF_FILE_URL = 'https://drive.google.com/file/d/18ctHL4cCfpKE2A52PJkhSYU80HrSGWmH/view?usp=drive_link';
+const PDF_FILE_URL = 'https://drive.google.com/file/d/15J0q9MeDwCmXaRj8-bVMxiGEUVOCAyVV/view?usp=drive_link';
 
 const Cv = () => {
     const { ref: experienceRef, inView: experienceInView } = useInView({ threshold: 0.1, });
