@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
-import { InView } from 'react-intersection-observer'; // Ensure this is imported
+import { InView } from 'react-intersection-observer';
 import project1 from '../assets/images/project1.svg';
 import project2 from '../assets/images/project2.svg';
 import project3 from '../assets/images/project3.svg';
 import project4 from '../assets/images/project4.svg';
+import project5 from '../assets/images/peca.png';
 
 const data = [
+  {
+    image: project5,
+    smDesc: "$PECA-Memecoin",
+    heading: "$PECA",
+    desc: "Peca's website introduces a unique and entertaining memecoin experience centered around the character Pepius Caesar, a whimsical and commanding figure who brings a sense of authority and humor to the world of cryptocurrency. The site combines engaging visuals, intuitive navigation, and community-focused features to make investing in Peca fun and straightforward.",
+    ch1: "User understanding.",
+    ch2: "Format restriction",
+    ch3: "Responsive design.",
+    ch4: "Developer handoff.",
+    link: "https://www.figma.com/design/f9oiQTnenuspqqyJKhKlIs/Untitled?node-id=72-2755&t=zEY8SgtCdstwu488-1"
+  },
   {
     image: project4,
     smDesc: "Table - Booking / Mobile App",
@@ -39,6 +51,7 @@ const data = [
     ch4: "Managing Dark and Light Mode.",
     link: "https://www.figma.com/proto/zoaFTlPJiDMo2wksf8SBe0/movie-ticket-booking-(Copy)?page-id=0%3A1&node-id=210-762&node-type=canvas&viewport=108%2C63%2C0.03&t=YyttbrQoAGec5hy3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=210%3A762"
   },
+  
   {
     image: project1,
     smDesc: "Employee Management  / Web App",
@@ -82,18 +95,14 @@ const Projects = () => {
                   className={`flex flex-col lg:flex-row sm:items-center sm:gap-16 gap-6 self-stretch ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} ${animationState[index] ? animationClass : ''}`}
                 >
                   {/* Image Container with Overlay and Hover Effect */}
-                 
-                    <div className="relative group rounded-lg overflow-hidden">
-                      <img src={e.image} alt="Project" className="rounded-lg w-full h-auto" />
-                      <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
-                        <a href={e.link} target='_blank' className="px-8 py-4 bg-primary text-900 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Launch
-                        </a>
-                      </div>
+                  <div className="relative group rounded-lg overflow-hidden w-[600px] h-[450px]">
+                    <img src={e.image} alt="Project" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                      <a href={e.link} target='_blank' className="px-8 py-4 bg-primary text-900 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Launch
+                      </a>
                     </div>
-                
-                   
-                 
+                  </div>
                   <div className='flex flex-col items-start flex-1'>
                     <div className='flex flex-col items-center self-stretch gap-2'>
                       <div className='flex items-center gap-6 self-stretch'>
