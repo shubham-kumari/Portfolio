@@ -31,7 +31,7 @@ const Header = () => {
                                 </div>
                                 <h1 className=' text-center font-dm sm:text-[144px] text-7xl font-normal sm:leading-[120px] leading-10'>Portfolio</h1>
                             </div>
-                            <p className='w-full text-end '>UI/UX Designer | Frontend Developer</p>
+                            <p className='w-full text-end '>UI/UX Designer | Product Thinker </p>
                         </div>
                     </div>
                     <img ref={rightRef} className={`pb-1  sm:h-auto h-5  ${rightInView ? 'animate-slideInFromRight' : 'translate-x-10 opacity-0'

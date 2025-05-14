@@ -16,14 +16,17 @@ const menu = [
   {
     menuName: <GoHome />,
     path: "#home",
+    tooltip: "Home",
   },
   {
     menuName: <SiReaddotcv />,
     path: "#resume",
+    tooltip: "Resume",
   },
   {
     menuName: <GoInfo />,
     path: "#about",
+    tooltip: "About",
   },
 ];
 
@@ -55,21 +58,39 @@ const Navbar = () => {
           {/* <h1 className='font-dm sm:text-3xl text-lg hidden'>Shubham Kumari</h1> */}
           <div className="hidden lg:flex lg:flex-col justify-between items-center h-full">
             {menu.map((e, index) => (
-              <a
-                key={index}
-                href={e.path}
-                onClick={(ev) => handleSmoothScroll(ev, e.path)}
-                className="px-2 py-2 border-b border-transparent text-2xl text-99 hover:text-secondary hover:border-secondary"
-              >
-                {e.menuName}
-              </a>
+              <div className="px-2 border-b border-transparent hover:border-secondary relative group inline-flex items-center">
+                <a
+                  key={index}
+                  href={e.path}
+                  onClick={(ev) => handleSmoothScroll(ev, e.path)}
+                  className="text-2xl text-99 hover:text-secondary py-2"
+                >
+                  {e.menuName}
+                </a>
+                <span className="absolute -left-6 top-1/2 -translate-y-1/2 -translate-x-full mr-2 px-2 py-2 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
+                  {e.tooltip}
+                </span>
+              </div>
+
+
+
             ))}
-            <a
-              className="px-2 py-2 border-b border-transparent hover:text-secondary hover:border-secondary"
-              href="mailto:kumarishubham273@gmail.com"
-            >
-              <GrContactInfo className="text-2xl" />
-            </a>
+            <div className="px-2 border-b border-transparent hover:border-secondary relative group inline-flex items-center">
+              <a
+                // key={index}
+                href="mailto:kumarishubham273@gmail.com"
+                // onClick={(ev) => handleSmoothScroll(ev, e.path)}
+                className="text-2xl text-99 hover:text-secondary py-2"
+              >
+                <GrContactInfo className="text-2xl" />
+              </a>
+              <span className="absolute -left-6 top-1/2 -translate-y-1/2 -translate-x-full mr-2 px-2 py-2 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
+                Mail
+              </span>
+            </div>
+
+
+
             <a href="https://github.com/shubham-kumari" target="_blank">
               <img
                 className=" cursor-pointer w-8 fill-99 "
@@ -102,9 +123,8 @@ const Navbar = () => {
         )}
 
         <div
-          className={`fixed  top-50 right-0 z-50 lg:hidden transform  ${
-            isOpen ? "-translate-x-0" : "translate-x-full"
-          } transition-transform duration-500 ease-in-out`}
+          className={`fixed  top-50 right-0 z-50 lg:hidden transform  ${isOpen ? "-translate-x-0" : "translate-x-full"
+            } transition-transform duration-500 ease-in-out`}
         >
           <div className="lg:hidden flex flex-col items-center bg-900 text-primary py-8 px-2 gap-12 rounded-l-xl">
             {menu.map((e, index) => (

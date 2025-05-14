@@ -21,7 +21,7 @@ const Footer = () => {
 
 
         </div>
-        <p className='text-secondary'>©2024 Shubham Kumari</p>
+        <p className='text-secondary'>©2025 Shubham Kumari</p>
       </div>
     </>
   )
