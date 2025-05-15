@@ -58,8 +58,10 @@ const Navbar = () => {
           {/* <h1 className='font-dm sm:text-3xl text-lg hidden'>Shubham Kumari</h1> */}
           <div className="hidden lg:flex lg:flex-col justify-between items-center h-full">
             {menu.map((e, index) => (
-              <div className="px-2 border-b border-transparent hover:border-secondary relative group inline-flex items-center">
+              <div 
+              className="px-2 border-b border-transparent hover:border-secondary relative group inline-flex items-center">
                 <a
+                
                   key={index}
                   href={e.path}
                   onClick={(ev) => handleSmoothScroll(ev, e.path)}
