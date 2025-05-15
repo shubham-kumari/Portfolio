@@ -122,12 +122,14 @@ const Cv = () => {
                                         </div>
                                         <div className='flex items-start flex-1'>
                                             <div className='flex px-2 items-center gap-5'>
-                                                <img className='h-24' src={line} alt="Line" />
+                                                <img className='h-36' src={line} alt="Line" />
                                             </div>
                                             <div className='flex flex-col items-start gap-2 sm:text-sm text-xs'>
+                                                <p>Design System</p>
                                                 <p>Product Thinking</p>
+                                                <p>User Flows</p>
                                                 <p>Usability Testing</p>
-                                                <p>Design documentation</p>
+                                                <p>Design Documentation</p>
                                             </div>
                                         </div>
                                     </div>

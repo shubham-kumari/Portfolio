@@ -24,12 +24,13 @@ const Home = () => {
       <section className="snap-start ">
         {/* <Experience /> */}
       </section>
-      <section className="snap-start">
-        <Cv />
-      </section>
       <section className="snap-start ">
         <Projects />
       </section>
+      <section className="snap-start">
+        <Cv />
+      </section>
+      
       <section className="snap-start ">
         <Projects2 />
       </section>
