@@ -31,9 +31,9 @@ const Home = () => {
         <Cv />
       </section>
       
-      <section className="snap-start ">
+      {/* <section className="snap-start ">
         <Projects2 />
-      </section>
+      </section> */}
 
       <section className="snap-start">
         <Thank />
