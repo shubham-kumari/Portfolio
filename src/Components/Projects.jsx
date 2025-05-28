@@ -123,7 +123,8 @@ const Projects = () => {
               key={index}
               className=" rounded-2xl overflow-hidden flex flex-col gap-2   w-full sm:w-[calc(50%-2rem)]"
             >
-              <div className=" rounded-3xl overflow-hidden bg-900 p-8">
+              <div className=" rounded-3xl overflow-hidden bg-900 p-8" href={e.link || "#"}
+                  target='_blank'>
                 <img
                   src={e.image}
                   alt="Project Visual"
