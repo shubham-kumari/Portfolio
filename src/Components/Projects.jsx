@@ -12,8 +12,17 @@ import table from "../assets/images/Table.png"
 import kouton from "../assets/images/Kouton.svg"
 import dash from "../assets/images/dash.png"
 import qcg from "../assets/images/QCG.png"
+import ulaloApp from '../assets/images/ulalo_app.png'
 
 const data = [
+  {
+    image: ulaloApp,
+
+    heading: "ULALO HealthFi App - Product Designer at Maxtron (Web3 Onboarding, Document Monetization, Health Scan Summary, Medication)",
+    logo: ULALO,
+    link: "https://www.figma.com/proto/uOuErBGTFyrrU4ABWZbKjZ/ULALO-App?page-id=0%3A1&node-id=568-2756&p=f&viewport=169%2C716%2C0.06&t=uFJYQVivrSayhwC8-1&scaling=contain&content-scaling=fixed&starting-point-node-id=568%3A1554",
+    lable: "View Project",
+  },
   {
     image: ULALOW,
     heading: "ULALO Testnet - Product Designer at Maxtron (Testnet UX, Web3 Onboarding & Gamification)",
@@ -41,9 +50,10 @@ const data = [
 
     heading: "QCG Dashboard - Freelance (Telegram Analytics, Signal-Based Trading UX, Real-Time Data Dashboard)",
     logo: qcg,
-    link: "https://www.figma.com/design/f9oiQTnenuspqqyJKhKlIs/Untitled?node-id=72-2755&t=zEY8SgtCdstwu488-1",
-    lable: "Coming Soon"
+    link: "https://www.figma.com/proto/RHzlaclubDJlBDYdlWH4kq/dashboard?page-id=0%3A1&node-id=258-4172&p=f&viewport=362%2C101%2C0.1&t=HqpkuGbQjvQkVdzl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=258%3A4172",
+    lable: "View Project"
   },
+  
 ];
 
 const Projects = () => {

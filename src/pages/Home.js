@@ -32,7 +32,7 @@ const Home = () => {
       </section>
       
       <section className="snap-start ">
-        <Projects2 />
+        {/* <Projects2 /> */}
       </section>
 
       <section className="snap-start">
