@@ -102,7 +102,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/shubham-kumari/"
+              href="https://www.linkedin.com/in/shubhamkumariux/"
               target="_blank"
             >
               <img
