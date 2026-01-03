@@ -13,12 +13,22 @@ import kouton from "../assets/images/Kouton.svg"
 import dash from "../assets/images/dash.png"
 import qcg from "../assets/images/QCG.png"
 import ulaloApp from '../assets/images/ulalo_app.png'
+import waveApp from '../assets/images/Wave Money.png'
+import waveLogo from '../assets/images/Wave-Logo.png'
 
 const data = [
   {
+    image: waveApp,
+
+    heading: "Wave Money App - Fast. Simple. Borderless Transfers - Pay your daily bills using Crypto",
+    logo: waveLogo,
+    link: "https://www.behance.net/gallery/241436923/Wave-Money-Fast-Simple-Borderless-Transfers",
+    lable: "View Project",
+  },
+  {
     image: ulaloApp,
 
-    heading: "ULALO HealthFi App - Product Designer at Maxtron (Web3 Onboarding, Document Monetization, Health Scan Summary, Medication)",
+    heading: "ULALO HealthFi App - Web3 Onboarding, Document Monetization, AI Health Scan Summary, Medication",
     logo: ULALO,
     link: "https://www.figma.com/proto/uOuErBGTFyrrU4ABWZbKjZ/ULALO-App?page-id=0%3A1&node-id=568-2756&p=f&viewport=169%2C716%2C0.06&t=uFJYQVivrSayhwC8-1&scaling=contain&content-scaling=fixed&starting-point-node-id=568%3A1554",
     lable: "View Project",
@@ -32,7 +42,7 @@ const data = [
   },
   {
     image: pixelW,
-    heading: "Timesheet, Employee Management & Project Management web app - UX/UI Design Intern at Pixel Bharat",
+    heading: "Timesheet, Employee Management & Project Management web app for Pixel Bharat",
     logo: pixel,
     link: "https://www.figma.com/proto/yxr1mIHDHul7OZkp1WN35D/Timesheet?page-id=0%3A1&node-id=1191-15122&p=f&viewport=622%2C98%2C0.03&t=ihgdFExfJhdmAoqS-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=535%3A4617&show-proto-sidebar=1",
     lable: "View Project"
@@ -133,10 +143,11 @@ const Projects = () => {
               key={index}
               className=" rounded-2xl overflow-hidden flex flex-col gap-2   w-full sm:w-[calc(50%-2rem)]"
             >
-              <div className=" rounded-3xl overflow-hidden bg-900 p-8" href={e.link || "#"}
-                  target='_blank'>
+              <div className=" rounded-3xl overflow-hidden bg-900 p-8" >
                 <img
                   src={e.image}
+                  href={e.link}
+                  target='_blank'
                   alt="Project Visual"
                   className="w-full h-auto object-cover rounded-xl"
                 />
