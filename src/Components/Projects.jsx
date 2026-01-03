@@ -143,27 +143,26 @@ const Projects = () => {
               key={index}
               className=" rounded-2xl overflow-hidden flex flex-col gap-2   w-full sm:w-[calc(50%-2rem)]"
             >
-              <div className=" rounded-3xl overflow-hidden bg-900 p-8" >
+              <a className=" rounded-3xl overflow-hidden bg-900 p-4" href={e.link} target='_blank'>
                 <img
                   src={e.image}
-                  href={e.link}
-                  target='_blank'
+                  
                   alt="Project Visual"
                   className="w-full h-auto object-cover rounded-xl"
                 />
-              </div>
+              </a>
               <div className=" flex flex-col mt-4 gap-3">
                 <div className="flex items-center space-x-2">
                   <img src={e.logo} alt="Company Logo" className="w-auto h-6" />
                 </div>
                 <div className=' flex flex-col gap-4'>
-                <h3 className="text-lg font-mon font-semibold text-900 mt-1">
+                <h3 className="text-lg font-mon font-semibold text-500 mt-1">
                   {e.heading}
                 </h3>
                 <a
                   href={e.link || "#"}
                   target='_blank'
-                  className="text-900 font-mon font-medium mt-2 inline-block hover:underline"
+                  className="text-900 font-mon font-medium mt-2 inline-block underline hover:font-semibold"
                 >
                   {e.lable}
                 </a>
