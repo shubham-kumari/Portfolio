@@ -96,7 +96,7 @@ const Cv = () => {
                                 </div>
                                 <div className='flex gap-4 items-center'>
                                     <a href="https://github.com/shubham-kumari" target='_blank' rel="noopener noreferrer"><img src={github} alt="GitHub" /></a>
-                                    <a href="https://www.linkedin.com/in/shubham-kumari/" target='_blank' rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" /></a>
+                                    <a href="https://www.linkedin.com/in/shubhamkumariux/" target='_blank' rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" /></a>
                                 </div>
                             </div>
                         </div>
